@@ -1,0 +1,211 @@
+
+.cart {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 32px;
+    margin-top: 64px;
+
+    &_content {
+        grid-column: span 8;
+    }
+
+    &_name_box {
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 14px;
+        &__title {
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 20px;
+            color: #000000;
+        }
+    }
+
+    &_item {
+        border-top: 0.5px solid #CACDD8;
+        padding-top: 25px;
+        padding-bottom: 32px;   
+        display: flex;     
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+
+    &_left {
+        display: flex;
+        gap: 32px;
+        &__2 {
+            padding-top: 7px;
+        }
+    }
+
+    &_info {
+        display: flex;
+        flex-direction: column;
+        width: 276px;
+
+        &__title {
+            font-style: normal;
+            font-weight: 500;
+            font-size: 24px;
+            line-height: 29px;
+            color: #000000;
+        }
+
+        &__caption {
+            font-style: normal;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 17px;
+            color: #888888;
+            padding-top: 16px;
+        }
+
+        &__price {
+            font-style: normal;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 20px;
+            color: #050505;
+            padding-top: 16px;
+        }
+
+        &_link_box {
+            padding-top: 15px;
+            &__link {
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 210%;
+                text-decoration-line: underline;
+                color: #000000;
+                padding-right: 30px;
+            }
+        }
+    }
+    
+    &_input {
+        width: 71px;
+        height: 51px;
+        text-align: center;
+        background: #F7F6F6;
+        border-radius: 6px;
+        border: none;
+    }
+
+    &_box_buttons_under {
+        display: flex;
+        flex-direction: row;
+        gap: 7px;
+        padding-top: 18px;
+    }
+
+    &_under_button {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 17px;
+        color: #020202;
+        text-align: center;
+        width: 200px;
+        height: 37px;
+        border: 1px solid #000000;
+        border-radius: 50px;
+        background-color: transparent;
+        transition: .4s;
+
+        &__2 {
+            font-style: normal;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 17px;
+            color: #fffdfd;
+            text-align: center;
+            width: 200px;
+            height: 37px;
+            border: 1px solid #000000;
+            border-radius: 50px;
+            background-color: #000000;
+        }
+
+        &_form {
+            align-self: center;
+            width: 290px;
+            height: 41px;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 20px;
+            animation: pulsate-bck 1s 3s ease-in-out 2 both;
+        }
+        
+        &:hover {
+            background-color: black;
+            color: white;
+        }
+    }
+
+   &_form {
+        background: #F7F6F6;
+        border-radius: 20px;
+        height: 556px;
+        grid-column: span 4;
+        box-sizing: border-box;
+    }
+}
+
+.form {
+    padding-top: 42px;
+    padding-left: 27px;
+    padding-right: 32px;
+
+    &_box {
+        padding-top: 35px;
+        display: flex;
+        flex-direction: column;
+        gap: 41px;
+    }
+
+    &_title {
+        font-family: 'Poppins', sans-serif;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 36px;
+        text-align: center;
+        color: #000000;
+    }
+
+    &_element {
+        outline: none;
+        padding-bottom: 3px;
+        border: 0;
+        border-bottom:1px solid #CACDD8;
+        background: transparent;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 17px;
+        color: #000000;
+        &::placeholder {
+            color: black;
+            font-family: 'Montserrat', sans-serif;
+        }
+    }  
+
+    &_result {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        &__price {
+            font-style: normal;
+            font-weight: 400;
+            font-size: 24px;
+            line-height: 29px;
+            text-align: center;
+            color: #000000;
+            margin-top: 64px;
+            margin-bottom: 18px;
+        }
+    }
+}
+
